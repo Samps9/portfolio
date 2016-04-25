@@ -1,0 +1,89 @@
+	body {
+ 		margin: 0;
+ 		font-family: Helmet,Freesans,Helvetica,Arial,sans-serif;
+ 		background-image: url("http://i.imgur.com/YadBy38.jpg");
+ 	}
+
+ 	.container {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+
+ 	.break{
+ 		clear: both;
+ 	}
+
+ 	.fixedwidth {
+ 		width: 1050px;
+ 		margin: 0 auto;
+ 	}
+
+ 	.topbar {
+ 		height: 4em;
+ 	}
+
+ 	.r2r {
+ 		padding:0.3em 0 0 6em;
+ 		font-size: 3em;
+ 		margin:0;
+ 		color: black;
+    	text-shadow: -1px 0 #9cff72, 0 1px #9cff72, -1px 0 #9cff72, 0 -1px #9cff72;
+ 	}
+
+ 	.homeimg {
+ 		width: 725px;
+ 		margin:0 auto;
+ 	}
+
+ 	.homeimg img {
+ 		border: 5px solid black;
+ 		border-radius: 25px;
+ 		height: 515px;
+ 	}
+
+ 	.menubar {
+ 		height: 40px;
+ 		width: 400px;
+ 		margin: 0 auto;
+ 	}
+
+ 	.menubar li {
+ 		float: left;
+ 		display: inline;
+ 		padding: 0 1em 1em 0;
+ 	}
+
+ 	.menubar p {
+ 		font-size: 2em;
+ 		padding: 0;
+ 		margin: 0;
+ 		color: black;
+ 		text-shadow:-1px 0 #9cff72, 0 1px #9cff72, -1px 0 #9cff72, 0 -1px #9cff72;
+ 	}
+
+ 	.musicvid{
+ 		width: 900px;
+ 		margin:0 auto;
+ 	}
+
+ 	.musicvid iframe {
+ 		width: 900px;
+ 	}
+
+ 	.liveshows {
+ 		width: 100%;
+ 		margin: 0 auto;
+ 	}
+
+ 	.liveshows iframe {
+ 		float: left;
+ 		padding: 2em 3.2em 0.5em 3.2em;
+ 	}
+
+  .menubar p:hover {
+    color: #9cff72;
+  }
+
+ 
+
+ 

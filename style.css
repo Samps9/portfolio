@@ -1,0 +1,240 @@
+ 
+  #me {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("me.png");
+    background-repeat: repeat;
+  }
+
+  #overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#74a0af), to(#826f50));
+     background: -webkit-linear-gradient(top, #826f50, #74a0af);
+     background: -moz-linear-gradient(top, #826f50, #74a0af);
+     background: -ms-linear-gradient(top, #826f50, #74a0af);
+     background: -o-linear-gradient(top, #826f50, #74a0af);
+     background-image: -ms-linear-gradient(top, #826f50 0%, #74a0af 100%);
+    opacity: 0.6666;
+    background-color: #bbbec1;
+  }
+
+  #title {
+    float: right;
+    margin-right: 2vw;
+    margin-top: 2vw;
+  }
+
+  #title h1 {
+    font-size: 5em;
+    font-family: sans-serif;
+    color: black;
+  }
+
+  #title h3 {
+    font-family: sans-serif;
+    font-size: 2.2em;
+    margin-left: 0.5vw;
+  }
+
+  #home {
+    width: 100%;
+  }
+
+
+  #home ul {
+   float: right;
+   margin-top: -7.5%;
+  }
+
+  #home li {
+    display: inline;
+    font-size: 2em;
+    margin: 0.3em;
+    padding-right: 0.2em;
+    font-family: sans-serif;
+    }
+
+  #title a {
+    text-decoration: none;
+    color:black;
+    font-size: 0.9em;
+    
+    transition: 
+      all .5s, 
+      transform .5s;
+  }
+
+  #github:hover {
+    color: #432977; 
+    font-size:1.01em;
+  }
+
+  #linkedin:hover {
+    color: #0f3e5b; 
+    font-size:1.01em;
+  }
+
+  #sc:hover {
+    color: #ff6c00; 
+    font-size:1.01em;
+  }
+
+  #mute:hover {
+    color: white; 
+    font-size:1.01em;
+  }
+
+  #nav-container {
+    height: 650px;
+  }
+
+  #dropdown-nav {
+    position: relative;
+    top: 10em;
+    left: 65.5%;
+    width: 32%;
+    height: 59%;
+    overflow: auto;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 1em;
+    transition: all 1.7s ;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 0.74;
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden
+  }
+
+  #dropdown-nav h4 {
+    margin: 1vw 1vw 0 1vw;
+    font-family: 'Rhodium Libre', serif;
+    border-bottom: 1px solid grey;
+    color: #74a0af;
+  }
+
+  #dropdown-nav li {
+    margin: 0 0 1vw 1.2vw;
+  }
+
+  #dropdown-nav a {
+    text-decoration: none;
+  }
+
+  #dropdown-nav img {
+    border: 0.2em solid #3d3835;
+    border-radius: 0.2em;
+    margin-top: 1vw;
+    width: 33%;
+  }
+
+  #dropdown-nav span {
+    font-family: 'Rhodium Libre', serif;
+    color: #74a0af;
+    position: relative;
+    bottom: 6em;
+    font-size: 11px;
+  }
+
+  #buddha {
+    left: 35.6%;
+  }
+
+@media screen and (max-device-width: 435px){
+
+  #title {
+    float: none;
+    margin: 1em 0 1em 3em;
+  }
+
+  #title h1 {
+    font-size: 8em;
+  }
+
+  #title h3 {
+    position: relative;
+    margin-left: 1%;
+    font-size: 3.5em;
+  }
+
+  #title a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.9em;
+    
+    transition: 
+      all .5s, 
+      transform .5s;
+  }
+
+  #home ul {
+    float: left;
+    padding-top: 1em;
+    margin-left: 34%;
+  }
+
+  #github:hover {
+    color: #432977; 
+    font-size:2.01em;
+  }
+
+  #linkedin:hover {
+    color: #0f3e5b; 
+    font-size:2.01em;
+  }
+
+  #sc:hover {
+    color: #ff6c00; 
+    font-size:2.01em;
+  }
+
+  #mute:hover {
+    color: white; 
+    font-size:2.01em;
+  }
+
+  #nav-container {
+    height: 100%;
+  }
+
+  #dropdown-nav {
+    position: relative;
+    top: 19em;
+    left: 6.5%;
+    width: 88%;
+    height: 97%;
+    overflow: hidden;
+  }
+
+  #dropdown-nav h4 {
+    font-size: 2em;
+    margin: 1em 1em 0 1em;
+  }
+
+  #dropdown-nav li {
+    margin-left: 2em;
+  }
+
+  #dropdown-nav img {
+    width: 40%;
+  }
+
+  #dropdown-nav span {
+    font-size: 1.4em;
+    margin-left: 0.5em;
+    bottom: 8em;
+  }
+
+  #buddha {
+    left: 41.3% ;
+  }
+
+}
