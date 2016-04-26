@@ -46,8 +46,8 @@ $(document).ready(function(){
 
   gain.connect(myAudioContext.destination);
   
-  bassOscillator.frequency.value = bassNotes[Math.floor( Math.random() * bassNotes.length )]
-  lowOscillator.frequency.value = lowNotes[Math.floor( Math.random() * lowNotes.length )]
+  bassOscillator.frequency.value = bassNotes[0]
+  lowOscillator.frequency.value = lowNotes[2]
   highOscillator.frequency.value = highNotes[Math.floor( Math.random() * highNotes.length )]
 
   setInterval(function(){
@@ -75,18 +75,26 @@ $(document).ready(function(){
     $("#dropdown-nav").attr("class", "visible") 
   }, 1474) 
 
+  var playedYet = false;
+
   $("#mute").click(function(event){
-    if( $("#mute").attr("class") == "clicked" ){
-      $("#mute").attr("class", "")
-      $("#mute i").attr("class", "fa fa-volume-up")
+    if( $("#mute").attr("class") == "clicked" && playedYet == false ){
+      $("#mute").attr("class", "");
+      $("#mute i").attr("class", "fa fa-volume-up");
       gain.gain.value = 0.04777;
       bassGain.gain.value = 0.047;
       bassOscillator.start( myAudioContext.currentTime + 1 );
       lowOscillator.start( myAudioContext.currentTime + 2 );
       highOscillator.start( myAudioContext.currentTime + 4 );
+      playedYet = true;
+    }else if( $("#mute").attr("class") == "clicked" ) {
+      $("#mute").attr("class", "");
+      $("#mute i").attr("class", "fa fa-volume-up");
+      gain.gain.value = 0.04777;
+      bassGain.gain.value = 0.047;
     }else{
-      $("#mute").attr("class", "clicked")
-      $("#mute i").attr("class", "fa fa-volume-off")
+      $("#mute").attr("class", "clicked");
+      $("#mute i").attr("class", "fa fa-volume-off");
       gain.gain.value = 0.0;
       bassGain.gain.value = 0.0;
     }
