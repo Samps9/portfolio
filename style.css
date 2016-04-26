@@ -184,22 +184,22 @@
 
   #github:hover {
     color: #432977; 
-    font-size:2.01em;
+    font-size:1.9em;
   }
 
   #linkedin:hover {
-    color: #0f3e5b; 
-    font-size:2.01em;
+    color: black; 
+    font-size:1.9em;
   }
 
   #sc:hover {
-    color: #ff6c00; 
-    font-size:2.01em;
+    color: black; 
+    font-size:1.9em;
   }
 
   #mute:hover {
-    color: white; 
-    font-size:2.01em;
+    color: black; 
+    font-size:1.9em;
   }
 
   #nav-container {
