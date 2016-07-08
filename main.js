@@ -9,10 +9,12 @@ $(document).ready(function(){
   var lowOscillator = myAudioContext.createOscillator();
   var highOscillator = myAudioContext.createOscillator();
   var bassOscillator = myAudioContext.createOscillator();
+
   var panLeft = myAudioContext.createPanner();
       panLeft.setPosition(-2,2,1)
   var panRight = myAudioContext.createPanner();
       panRight.setPosition(4,0,4)
+
   var compressor = myAudioContext.createDynamicsCompressor();
       compressor.threshold.value = -100;
       compressor.knee.value = 20;
@@ -20,11 +22,15 @@ $(document).ready(function(){
       compressor.reduction.value = -40;
       compressor.attack.value = 0.5;
       compressor.release.value = 5.5;
+
   var delay = myAudioContext.createDelay(77.777);
+
   var gain = myAudioContext.createGain();
-      gain.gain.value = 0.074777
+      gain.gain.value = 0.074777;
+
   var bassGain = myAudioContext.createGain()
-      bassGain.gain.value = 0.047
+      bassGain.gain.value = 0.047;
+      
   var bassNotes = [110.00, 130.81, 146.83, 164.81, 185.00, 196.00]
   var lowNotes = [220, 246.94, 261.63, 293.66, 329.63, 369.99, 392.00];
   var highNotes = [440, 493.88, 523.25, 587.33, 659.25, 739.99, 783.99];
