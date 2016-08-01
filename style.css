@@ -95,14 +95,14 @@
   #dropdown-nav {
     position: relative;
     top: 10em;
-    left: 65.5%;
-    width: 32%;
-    height: 30vw;
-    overflow: auto;
+    left: 66.6%;
+    width: 31%;
+    height: 370px;
     background-color: black;
     border: 1px solid black;
-    border-radius: 1em;
-    transition: all 1.7s ;
+    overflow: auto;
+    border-radius: 0.25em;
+    transition: all 1.8s;
   }
 
   .visible {
@@ -114,6 +114,10 @@
     opacity: 0;
     visibility: hidden
   }
+
+  /*#dropdown-nav ul {
+    overflow: auto;
+  }*/
 
   #dropdown-nav h4 {
     margin: 1vw 1vw 0 1vw;
@@ -218,13 +222,17 @@
     overflow: hidden;
   }
 
+  #dropdown-nav li {
+    margin-left: 40px;
+  }
+
   #dropdown-nav h4 {
     font-size: 2em;
     margin: 1em 1em 0 1em;
   }
 
   #dropdown-nav img {
-    width: 40%;
+    width: 36%;
     height: 35vw;
   }
 

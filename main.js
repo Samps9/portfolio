@@ -79,7 +79,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $("#dropdown-nav").attr("class", "visible") 
-  }, 1474) 
+  }, 747) 
 
   var playedYet = false;
 
