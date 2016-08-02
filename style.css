@@ -94,10 +94,11 @@
 
   #dropdown-nav {
     position: relative;
-    top: 10em;
+    top: 12vw;
     left: 66.6%;
     width: 31%;
-    height: 370px;
+   /* height: 370px;*/
+    height: 30vw;
     background-color: black;
     border: 1px solid black;
     overflow: auto;
@@ -146,7 +147,7 @@
     font-family: 'Rhodium Libre', serif;
     color: #74a0af;
     position: relative;
-    bottom: 6em;
+    bottom: 5vw;
     font-size: 0.9vw;
   }
 
@@ -243,3 +244,12 @@
   }
 
 }
+
+/*@media screen and (max-device-width: 2000px) {
+   #dropdown-nav {
+    position: relative;
+    top: 15em;
+    
+  }
+
+}*/
