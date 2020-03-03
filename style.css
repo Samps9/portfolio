@@ -1,31 +1,25 @@
- 
-  #me {
-    position: absolute;
-    width: 100%;
+  html, body {
     height: 100%;
-    background-image: url("me.png");
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
-  #overlay {
+  body {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    background: -webkit-gradient(linear, left top, left bottom, from(#74a0af), to(#826f50));
-    background: -webkit-linear-gradient(top, #826f50, #74a0af);
-    background: -moz-linear-gradient(top, #826f50, #74a0af);
-    background: -ms-linear-gradient(top, #826f50, #74a0af);
-    background: -o-linear-gradient(top, #826f50, #74a0af);
-    background-image: -ms-linear-gradient(top, #826f50 0%, #74a0af 100%);
-    opacity: 0.6666;
+
+    background: 
+      -webkit-gradient(linear, left top, left bottom, from(rgba(116, 160, 175, 0.5)), to(rgba(130, 111, 80, 0.5))),
+      -webkit-linear-gradient(top, rgba(130, 111, 80, 0.5), rgba(116, 160, 175, 0.5)),
+      url("me.png");
     background-color: #bbbec1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   #title {
     float: right;
     margin-right: 2vw;
     margin-top: 2vw;
+    opacity: 0.6666;
   }
 
   #title h1 {
@@ -152,7 +146,7 @@
   }
 
 
-@media screen and (max-device-width: 435px){
+@media screen and (max-device-width: 450px){
 
   #title {
     float: none;
@@ -219,8 +213,8 @@
     top: 19em;
     left: 6.5%;
     width: 88%;
-    height: 97%;
-    overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   #dropdown-nav li {
